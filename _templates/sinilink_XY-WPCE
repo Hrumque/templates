@@ -18,3 +18,11 @@ It is possible to use solid core 24 AWG wires to make the connection without nee
 ![Pinout](/assets/device_images/sinilink_XY-WPCE_pinout.webp)
 
 Switch1 is detached and is used to monitor power status of the PC. It will be discovered as a binary sensor in Home Assistant.
+
+
+Mine - has other pinouts:
+GPIO10 = powerSW key (from PC chassis), active low.
+GPIO5 = powerON signal to mainboard (via transoptors, so polarity does not matter), active high. 
+GPIO12 = level high means powers supply (and PC) is ON
+GPIO4 - button onboard, active low.
+GPIO2 - blue led onboard, active low
